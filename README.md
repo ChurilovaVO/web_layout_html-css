@@ -1,1 +1,1 @@
-# web_layout_html-css
+Домашнее задание по курсу Веб-вёрстка HTML/CSS
