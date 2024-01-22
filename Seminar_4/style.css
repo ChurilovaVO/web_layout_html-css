@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    padding-bottom: 99px;
+    background: var(--020-a-18, #020A18);
+}
+
+.center {
+    margin-left: calc(50% - 573px);
+    margin-right: calc(50% - 573px);
+}
+
+.header {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    position: relative;
+}
+
+.block {
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0.02;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) -41.9%, #FFF 260.24%);
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.top__link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.top__header__link {
+    color: var(--ffffff, #FFF);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.top__content {
+    margin-top: 160px;
+    margin-bottom: 197px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+    color: var(--3-a-68-b-8, #3A68B8);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    /* 28.8px */
+    text-transform: uppercase;
+}
+
+.title {
+    width: 604px;
+    margin-bottom: 40px;
+    color: var(--ffffff, #FFF);
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    /* 71.5px */
+}
+
+.text {
+    width: 558px;
+    color: var(--ffffff, #FFF);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    /* 28.8px */
+    opacity: 0.7;
+}
+
+.top__buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    color: var(--ffffff, #FFF);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.top__logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
