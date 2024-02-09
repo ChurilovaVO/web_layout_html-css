@@ -261,6 +261,21 @@ body {
         grid-template-columns: repeat(3, 232px);
         grid-template-rows: 168px 116px;
         gap: 19px;
+        padding-bottom: 106px;
+    }
+
+    .p_products {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 581px);
+        gap: 16px;
+    }
+
+    .p_i_title {
+        padding-bottom: 13px;
+    }
+
+    .p_i_text_num {
+        padding-top: 18px;
     }
 
     /*  .center {
