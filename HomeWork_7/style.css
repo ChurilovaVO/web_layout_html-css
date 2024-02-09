@@ -101,21 +101,23 @@ body {
 .item1 {
     background: #C4C4C4;
     background-image: url(img/offer/for_women.png);
-    position: relative;
-
+    background-size: contain;
 }
 
 .item2 {
     background-image: url(img/offer/for_men.png);
+    background-size: contain;
 }
 
 .item3 {
     background-image: url(img/offer/for_kids.png);
+    background-size: contain;
 }
 
 .item4 {
     grid-column: span 3;
     background-image: url(img/offer/accesories.png);
+    background-size: contain;
 }
 
 .products_title {
@@ -255,6 +257,11 @@ body {
         font-size: 24px;
     }
 
+    .offer {
+        grid-template-columns: repeat(3, 232px);
+        grid-template-rows: 168px 116px;
+        gap: 19px;
+    }
 
     /*  .center {
         padding-left: calc(50% - 376px);
