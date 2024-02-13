@@ -117,29 +117,25 @@ body {
 
 }
 
-.offer_title_block {
-    position: absolute;
-}
-
 .item1 {
     background: #C4C4C4;
-    background-image: url(img/offer/for_women.png);
+    background-image: url(img/offer/dark_phone.png), url(img/offer/for_women.png);
     background-size: contain;
 }
 
 .item2 {
-    background-image: url(img/offer/for_men.png);
+    background-image: url(img/offer/dark_phone.png), url(img/offer/for_men.png);
     background-size: contain;
 }
 
 .item3 {
-    background-image: url(img/offer/for_kids.png);
+    background-image: url(img/offer/dark_phone.png), url(img/offer/for_kids.png);
     background-size: contain;
 }
 
 .item4 {
     grid-column: span 3;
-    background-image: url(img/offer/accesories.png);
+    background-image: url(img/offer/dark_phone.png), url(img/offer/accesories.png);
     background-size: contain;
 }
 
@@ -313,4 +309,71 @@ body {
     .bg_highlighted {
         background: url(img/product/Add_to_cart.png) center no-repeat, url(img/product/1.png), url(img/product/product_2.png) center no-repeat;
     }
+}
+
+@media (min-width: 320px) and (max-width:767px) {
+    .none_phone {
+        display: none;
+    }
+
+    .header {
+        gap: 200px;
+
+    }
+
+    .top {
+        justify-content: center;
+    }
+
+    .title_block {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .rectangle_title {
+        height: 61px;
+        width: 12px;
+    }
+
+    .title_main {
+        font-size: 38px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .subtitle_end {
+        font-size: 20px;
+    }
+
+    .offer {
+        padding-top: 64px;
+    }
+
+    .item4 {
+        grid-column: span 1;
+    }
+
+    .offer {
+        grid-template-columns: repeat(1, 343px);
+        grid-template-rows: 248px 249px 247px 111px;
+        gap: 32px;
+        padding-bottom: 64px;
+    }
+
+    p_t_title {
+        margin-bottom: 3px;
+    }
+
+    .p_products {
+        padding-top: 64px;
+        padding-bottom: 41px;
+    }
+
+    .p_products {
+        grid-template-columns: repeat(1, 360px);
+    }
+
+
 }
