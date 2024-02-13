@@ -311,7 +311,7 @@ body {
     }
 }
 
-@media (min-width: 320px) and (max-width:767px) {
+@media (max-width:767px) {
     .none_phone {
         display: none;
     }
@@ -374,6 +374,33 @@ body {
     .p_products {
         grid-template-columns: repeat(1, 360px);
     }
+}
 
+@media (max-width:320px) {
+    .header {
+        gap: 115px;
+    }
 
+    .offer {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: 220px 220px 220px 100px;
+    }
+
+    .p_t_text {
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .p_products {
+        grid-template-columns: repeat(1, 310px);
+        grid-template-rows: repeat(6, 530px);
+    }
+
+    .img_min_width {
+        width: 100%;
+    }
+
+    .bg_highlighted {
+        height: 360px;
+    }
 }
