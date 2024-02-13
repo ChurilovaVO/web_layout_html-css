@@ -1,4 +1,5 @@
 ДЗ 8. Структура HTML5
+
 Макет https://www.figma.com/file/mnLY69cYE5cqWM5w6n5hXx/Seo-%26-Digital-Marketing-Landing-Page?node-id=189%3A839
 
 В данном уроке мы переходим к созданию мобильной версии проекта
