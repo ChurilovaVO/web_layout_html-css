@@ -449,6 +449,7 @@ body {
     line-height: 17px;
     letter-spacing: 0%;
     text-align: center;
+    background: inherit;
 }
 
 .s_button_bg {
@@ -573,6 +574,10 @@ body {
         padding-bottom: 106px;
     }
 
+    .products {
+        margin-bottom: 64px;
+    }
+
     .p_products {
         grid-template-columns: repeat(2, 360px);
         grid-template-rows: repeat(3, 581px);
@@ -589,6 +594,40 @@ body {
 
     .bg_highlighted {
         background: url(img/product/Add_to_cart.png) center no-repeat, url(img/product/1.png), url(img/product/product_2.png) center no-repeat;
+    }
+
+    .features {
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(3, 134px);
+        justify-content: center;
+        gap: 48px;
+        background: rgb(34, 34, 36);
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 53px;
+        padding-bottom: 140px;
+        background-size: cover;
+    }
+
+    .subscribe_info {
+        padding: 0;
+    }
+
+    .subscribe_text {
+        min-height: 99px;
+    }
+
+    .social_networks {
+        gap: 305px;
+    }
+
+    .brand {
+        width: 251px;
     }
 }
 
