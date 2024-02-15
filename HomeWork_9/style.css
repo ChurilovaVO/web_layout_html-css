@@ -20,6 +20,10 @@ body {
     padding-bottom: 19px;
 }
 
+.header:hover~.top .menu {
+    display: block;
+}
+
 .logo {
     display: flex;
     gap: 41px;
@@ -102,6 +106,11 @@ body {
     padding: 32px 74px 32px 32px;
     position: absolute;
     right: 0;
+    display: none;
+}
+
+.menu:hover {
+    display: block;
 }
 
 .menu_title {
