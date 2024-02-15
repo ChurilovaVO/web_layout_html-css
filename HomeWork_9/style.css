@@ -99,8 +99,6 @@ body {
 .menu {
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
     background: rgb(255, 255, 255);
-    width: 232px;
-    height: 634px;
     padding: 32px 74px 32px 32px;
     position: absolute;
     right: 0;
@@ -115,6 +113,7 @@ body {
     text-align: left;
     padding-bottom: 24px;
     padding-left: 1px;
+    width: 55px;
 }
 
 .menu_categories {
