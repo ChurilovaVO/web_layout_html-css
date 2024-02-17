@@ -20,9 +20,9 @@ body {
     padding-bottom: 19px;
 }
 
-.header:hover~.top .menu {
+/*.header:hover~.top .menu {
     display: block;
-}
+}*/
 
 .logo {
     display: flex;
@@ -31,7 +31,6 @@ body {
 }
 
 .magnifier {
-    height: 28px;
     padding-bottom: 1px;
 }
 
@@ -71,6 +70,10 @@ body {
     gap: 64px;
     padding-left: calc(50% - 800px);
     position: relative;
+}
+
+.top:hover .menu {
+    display: block;
 }
 
 .title_block {
@@ -125,6 +128,10 @@ body {
     width: 55px;
 }
 
+.menu_title:hover {
+    text-decoration: underline;
+}
+
 .menu_categories {
     display: flex;
     flex-direction: column;
@@ -133,6 +140,10 @@ body {
 
 .category_title {
     padding-bottom: 12px;
+}
+
+.category_title:hover {
+    text-decoration: underline;
 }
 
 .category_sections {
@@ -152,6 +163,7 @@ body {
     text-align: left;
 }
 
+
 .category_section {
     color: rgb(111, 110, 110);
     font-size: 14px;
@@ -159,6 +171,10 @@ body {
     line-height: 17px;
     letter-spacing: 0%;
     text-align: left;
+}
+
+.category_section:hover {
+    text-decoration: underline;
 }
 
 .offer {
@@ -252,15 +268,50 @@ body {
 
 .product_item {
     background: rgb(248, 248, 248);
+    position: relative;
+}
+
+.product_item:hover .add_to_card_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_to_card_block {
+    position: absolute;
+    top: 0;
+    width: 360px;
+    height: 420px;
+    background: url("data:image/svg+xml,%3Csvg width='360.000031' height='420.000000' viewBox='0 0 360 420' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs/%3E%3Cpath id='Rectangle 15 copy' d='M0 0L360 0L360 420L0 420L0 0Z' fill='%233A3838' fill-opacity='0.860000' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+    display: none;
+}
+
+.add_button {
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    padding: 11px 16px 8px 13px;
+    background-color: transparent;
+}
+
+.add_button:active {
+    transform: scale(0.9);
+}
+
+.add_text {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 .bg_highlighted {
     background: url(img/product/product_2.png) center no-repeat, url(img/product/product_2_bg.png);
     height: 420px;
-}
-
-.bg_highlighted:hover {
-    background: url(img/product/Add_to_cart.png) center no-repeat, url(img/product/1.png), url(img/product/product_2.png) center no-repeat;
 }
 
 .title_and_price {
@@ -300,6 +351,21 @@ body {
     padding: 15px 39px 14px 39px;
     background: none;
     margin-left: calc(50% - 106px);
+}
+
+.p_button:hover {
+    border: 1px solid rgb(255, 106, 106);
+    background: rgb(241, 109, 127);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.p_button:active {
+    transform: scale(0.9);
 }
 
 .features {
@@ -385,7 +451,6 @@ body {
     letter-spacing: 0%;
     text-align: center;
     padding-bottom: 32px;
-
 }
 
 .subscribe_title_bold {
@@ -406,6 +471,7 @@ body {
     letter-spacing: 0%;
     text-align: center;
     max-width: 360px;
+    height: 99px;
 }
 
 .subscribe_form {
@@ -428,11 +494,17 @@ body {
     border: none;
     position: relative;
     background: inherit;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 0px 22px 0px 22px;
 }
 
 .s_form_input {
     position: absolute;
-    z-index: 2;
+}
+
+.bg_input:focus {
+    background-color: rgb(225, 225, 225);
 }
 
 .bg_input::placeholder {
@@ -444,7 +516,6 @@ body {
     letter-spacing: 0%;
     text-align: left;
     opacity: 0.67;
-    padding-left: 22px;
     z-index: 3;
     position: absolute;
 }
@@ -460,6 +531,10 @@ body {
     letter-spacing: 0%;
     text-align: center;
     background: inherit;
+}
+
+.subscribe_button:active {
+    transform: scale(0.9);
 }
 
 .s_button_bg {
@@ -514,6 +589,10 @@ body {
 
 .s_n_item:hover .s_n_bg_rectangle path {
     fill: #F16D7F;
+}
+
+.s_n_item:active {
+    transform: scale(0.9);
 }
 
 .s_n_bg_rectangle {
