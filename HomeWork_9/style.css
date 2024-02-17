@@ -20,9 +20,9 @@ body {
     padding-bottom: 19px;
 }
 
-/*.header:hover~.top .menu {
-    display: block;
-}*/
+.header_link:hover .header_link_icon path {
+    fill: #F16D7F;
+}
 
 .logo {
     display: flex;
@@ -297,6 +297,10 @@ body {
     background-color: transparent;
 }
 
+.add_button:hover {
+    background-color: rgb(111, 110, 110);
+}
+
 .add_button:active {
     transform: scale(0.9);
 }
@@ -534,8 +538,12 @@ body {
     background: inherit;
 }
 
+.subscribe_button:hover {
+    transform: scale(1.1);
+}
+
 .subscribe_button:active {
-    transform: scale(0.9);
+    transform: scale(1);
 }
 
 .s_button_bg {
