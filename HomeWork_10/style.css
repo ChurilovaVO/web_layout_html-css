@@ -503,7 +503,6 @@ body {
     height: 49px;
     border: none;
     background: url("data:image/svg+xml,%3Csvg width='256.000000' height='49.000000' viewBox='0 0 256 49' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs /%3E%3Cpath id='bg_input' d='M17.6288 0L256 0C256 0 256 10.969 256 24.5C256 38.031 256 49 256 49L17.6288 49C7.8927 49 0 38.031 0 24.5C0 10.969 7.8927 0 17.6288 0Z' fill='%23E1E1E1' fill-opacity='1.000000' fill-rule='evenodd' /%3E%3C/svg%3E");
-    z-index: 2;
     box-sizing: border-box;
     padding: 0px 22px 0px 22px;
 }
@@ -529,7 +528,6 @@ body {
 }
 
 .subscribe_button {
-    position: relative;
     border: none;
     color: rgb(255, 255, 255);
     font-family: Lato;
@@ -538,7 +536,6 @@ body {
     line-height: 17px;
     letter-spacing: 0%;
     text-align: center;
-    background: inherit;
     display: flex;
     align-items: center;
     background-image: url("data:image/svg+xml,%3Csvg width='100.000000' height='49.000000' viewBox='0 0 100 49' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs /%3E%3Cpath id='bg_button' d='M0 0L77.8846 0C83.75 0 89.3751 2.58127 93.5225 7.17592C97.6699 11.7706 100 18.0022 100 24.5C100 30.9978 97.6699 37.2294 93.5225 41.8241C89.3751 46.4187 83.75 49 77.8846 49L0 49L0 0Z' fill='%23F16D7F' fill-opacity='1.000000' fill-rule='nonzero' /%3E%3C/svg%3E");
