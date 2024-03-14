@@ -1,11 +1,19 @@
 @import 'mixins';
 @import 'var';
 
+
 .header {
-    @include displayFlexCenter(859px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     background: rgb(34, 34, 34);
     padding-top: 18px;
     padding-bottom: 19px;
+    position: relative;
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+   
 }
 
 .header_link:hover .header_link_icon path {
@@ -45,16 +53,25 @@
             border-radius: 50%;
         }
 }
-
+#burger_checkbox{
+    position: absolute;
+    left: -9999999px;
+    visibility: hidden;
+    &:checked ~ .menu{
+        right: -232px;
+    }
+}
 .menu {
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
     background: rgb(255, 255, 255);
     padding: 32px 74px 32px 32px;
     position: absolute;
-    right: 0;
-    top: 77px;
-    display: none;
+    right: -1000px;
+    top: 60px;
+    width: 232px;
+    box-sizing: border-box;
     z-index: 2;
+    transition: right 0.3s;
     .menu_title {
         color: rgb(0, 0, 0);
         font-size: 14px;
@@ -99,8 +116,5 @@
     }
 }
 .menu:hover {
-    display: block;
-}
-.header:hover .menu {
     display: block;
 }

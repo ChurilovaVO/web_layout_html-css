@@ -2,8 +2,12 @@
 
 .breadcrumb{
     @include displayFlexCenter(737px);
-    padding: 60px;
+    padding: 60px 0px;
     background: rgb(248, 243, 244);
+}
+#card_breadcrumb{
+    display: block;
+    padding-left: calc(50% - 570px);
 }
 .breadcrumb_title{
     color: $colorSite;
