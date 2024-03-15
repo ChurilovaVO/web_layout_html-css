@@ -96,24 +96,6 @@
                     letter-spacing: 0%;
                     text-align: left;
                 }
-                .input_shipping_address{
-                    width: 360px;
-                    height: 45px;
-                    padding: 0px 17px 0px 17px;
-                    font-family: Lato;
-                    font-size: 13px;
-                    font-weight: 300;
-                    line-height: 16px;
-                    letter-spacing: 0%;
-                    text-align: left;
-                    color: #222222;
-                    @include borderForShippingAdress;
-                    &::placeholder {
-                        color: #B1B1B1;
-                        font-family: Lato;
-                        font-weight: 300;
-                    }
-                }
             }
         }
         .proceed_to_checkout{
@@ -174,6 +156,27 @@
              }
         }
     }
+}
+.site_button{
+    
+}
+.input_form{
+    width: 360px;
+                    height: 45px;
+                    padding: 0px 17px 0px 17px;
+                    font-family: Lato;
+                    font-size: 13px;
+                    font-weight: 300;
+                    line-height: 16px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    color: #222222;
+                    @include borderForShippingAdress;
+                    &::placeholder {
+                        color: #B1B1B1;
+                        font-family: Lato;
+                        font-weight: 300;
+                    }
 }
 
 .button_shipping_address{
