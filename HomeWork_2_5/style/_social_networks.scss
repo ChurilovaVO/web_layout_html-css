@@ -2,7 +2,7 @@
     background: rgb(34, 34, 36);
     padding-top: 24px;
     padding-bottom: 23px;
-    @include displayFlexCenter(665px);
+    @include displayFlexSpaceBetween;
 }
 
 .brand {

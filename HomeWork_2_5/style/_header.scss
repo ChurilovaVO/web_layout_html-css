@@ -3,10 +3,7 @@
 
 
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    @include displayFlexSpaceBetween;
     background: rgb(34, 34, 34);
     padding-top: 18px;
     padding-bottom: 19px;
@@ -32,33 +29,15 @@
 .button_copy {
     @include displayFlex(33px);
     align-items: center;
-    position: relative;
     padding-top: 8px;
     padding-right: 9px;
-    .eclipse::after {
-            content: "5";
-            position: absolute;
-            top: 0;
-            right: 0;
-            color: rgb(255, 255, 255);
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 14px;
-            letter-spacing: 0%;
-            text-align: center;
-            z-index: 2;
-            background: $colorSite;
-            width: 19px;
-            height: 19px;
-            border-radius: 50%;
-        }
 }
 #burger_checkbox{
     position: absolute;
     left: -9999999px;
     visibility: hidden;
     &:checked ~ .menu{
-        right: -232px;
+        right: 0;
     }
 }
 .menu {
@@ -67,7 +46,7 @@
     padding: 32px 74px 32px 32px;
     position: absolute;
     right: -1000px;
-    top: 60px;
+    top: 80px;
     width: 232px;
     box-sizing: border-box;
     z-index: 2;
@@ -117,4 +96,25 @@
 }
 .menu:hover {
     display: block;
+}
+
+.eclipse_block{
+    position: relative;
+    .eclipse::after {
+            content: "5";
+            position: absolute;
+            top: -8px;
+            right: -9px;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0%;
+            text-align: center;
+            z-index: 2;
+            background: $colorSite;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+        }
 }

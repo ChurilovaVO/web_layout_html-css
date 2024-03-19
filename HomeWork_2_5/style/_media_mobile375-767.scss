@@ -1,4 +1,5 @@
 @media (max-width:767px) {
+
     .none_phone {
         display: none;
     }
@@ -6,12 +7,10 @@
         display: none;
     }
 
-    .header {
-        gap: 200px;
-    }
 
     .top {
         justify-content: center;
+        height: 363px;
     }
 
     .title_block {

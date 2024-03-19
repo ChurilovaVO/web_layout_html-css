@@ -1,17 +1,11 @@
 @import 'var';
+@import 'mixins';
 
 .breadcrumb{
-    @include displayFlexCenter(737px);
-    padding: 60px 0px;
+    @include displayFlexSpaceBetween();
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: rgb(248, 243, 244);
-}
-#card_breadcrumb{
-    display: block;
-    padding-left: calc(50% - 570px);
-}
-#registration_breadcrumb{
-    display: block;
-    padding-left: calc(50% - 570px);
 }
 
 .breadcrumb_title{

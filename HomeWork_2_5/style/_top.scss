@@ -1,20 +1,23 @@
 .top {
     background: rgb(241, 228, 230);
     display: flex;
+    align-items: center;
     gap: 64px;
     padding-left: calc(50% - 800px);
-    position: relative;
 }
 
-.title_block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 16px;
-    margin-top: 290px;
-    margin-bottom: 381px;
+.man{
+    max-width: 50vw;
+    max-height: 50vw;
+}
+
+.title {
+    padding-left: 16px;
+    height: 93px;
+    border-left: 12px solid $colorSite;
+    box-sizing: border-box;
   
-    .title_main {
+    &_main {
         color: #222;
         font-size: 48px;
         font-weight: 900;
