@@ -676,10 +676,10 @@ summary::webkit-details-marker {
   .brand {
     width: 251px;
   }
-  .product_description {
+  .product__content .product_description {
     top: 0;
   }
-  #product_page {
+  .product__content #product_page {
     padding: 729px 0px 129px 0px;
   }
   .box_content .cart_blocks {

@@ -81,21 +81,18 @@
     .brand {
         width: 251px;
     }
-    
-
-    //product
-    .product_description {
+     //product
+    .product__content{
+        .product_description {
         top:0;
+        }
+        #product_page {
+            padding: 729px 0px 129px 0px;
+        }
     }
 
-    #product_page {
-    padding: 729px 0px 129px 0px;
-    }
-
-
-
-    //cart
-    .box_content{
+   .box_content{
+        //cart
         .cart_blocks{
             padding: 59px 0px 128px 0px;
             flex-direction: column;
@@ -121,6 +118,7 @@
                 }
             }
         }
+        //registration
         .registration__box{
             gap: 22px;
             padding: 40px 16px 96px 16px;
@@ -143,8 +141,6 @@
             }
         }
     }
-
-    //registration
    
 
 
