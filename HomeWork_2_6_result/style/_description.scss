@@ -3,7 +3,8 @@
 .product_description{
     @include displayFlexColumnCenter(0px);
     padding: 64px 0px 64px 0px;
-    width: 1141px;
+    max-width: 1141px;
+    width: 100%;
     border: 1px solid rgb(234, 234, 234);
     background: rgb(255, 255, 255);
     position: absolute;
@@ -30,7 +31,7 @@
 .description_text{
     color: rgb(94, 94, 94);
     @include fontDescription;
-    width: 555px;
+    max-width: 555px;
 }
 .description_price{
     color: rgb(239, 91, 112);

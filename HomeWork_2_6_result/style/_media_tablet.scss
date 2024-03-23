@@ -67,11 +67,8 @@
         gap: 48px;
         padding-top: 53px;
         padding-bottom: 140px;
-         .subscribe_info {
-        padding: 0;
-            .subscribe_text {
-                min-height: 99px;
-            }
+        .subscribe_info {
+            padding: 0;
         }
         .subscribe_form {
             align-items: center;
@@ -85,6 +82,7 @@
     .product__content{
         .product_description {
         top:0;
+        left: 0;
         }
         #product_page {
             padding: 729px 0px 129px 0px;

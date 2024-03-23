@@ -1,12 +1,25 @@
 .slide{
     background: rgb(247, 247, 247);
-    @include displayFlexSpaceBetween;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 777px;
+    position: relative;
     &__button{
         background: rgba(42, 42, 42, 0.15);
         border: none;
         width: 47px;
         height: 47px;
+    }
+    .left{
+        position: absolute;
+        left: 0;
+        top: 365px;
+    }
+    .right{
+        position: absolute;
+        right: 0;
+        top: 365px;
     }
     &__button:hover{
         transform: scale(1.1);
@@ -21,8 +34,3 @@
         max-height: 724px;
     }
 }
-
- .center__slide{
-        padding-left: calc(50% - 800px);
-        padding-right: calc(50% - 800px);
-    }
