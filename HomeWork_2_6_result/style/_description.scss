@@ -49,6 +49,12 @@
     gap:23px;
     padding-top: 64px;
     padding-bottom: 48px;
+    .choose_parameter{
+                    display: flex;
+                    align-items: center;
+                    gap: 9px;
+                   
+                }
     .description_choose_text{
     color: rgb(111, 110, 110);
     @include fontStyleSmallWeight(left);

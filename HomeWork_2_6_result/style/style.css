@@ -941,11 +941,6 @@ summary::webkit-details-marker {
     padding-top: 49px;
     padding-bottom: 64px;
   }
-  .product__content .product_description .description_choose_block .choose_parameter {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-  }
   .product__content .product_description .description_choose_block .choose_parameter .description_choose_text {
     font-size: 10px;
     line-height: 12px;
@@ -1176,6 +1171,11 @@ summary::webkit-details-marker {
   gap: 23px;
   padding-top: 64px;
   padding-bottom: 48px;
+}
+.description_choose_block .choose_parameter {
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
 .description_choose_block .description_choose_text {
   color: rgb(111, 110, 110);
